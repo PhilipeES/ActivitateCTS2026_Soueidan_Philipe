@@ -1,6 +1,6 @@
-package ro.ase.cts.seminar1.zoo;
+package ro.ase.cts.seminar01.zoo;
 
-import ro.ase.cts.seminar1.animals.Animal;
+import ro.ase.cts.seminar01.animals.Animal;
 
 public class ZooKeeper {
     protected String name;
