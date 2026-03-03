@@ -1,10 +1,10 @@
-package ro.ase.cts.seminar1.main;
+package ro.ase.cts.seminar01.main;
 
-import ro.ase.cts.seminar1.animals.Lion;
-import ro.ase.cts.seminar1.animals.Tiger;
-import ro.ase.cts.seminar1.animals.Zebra;
-import ro.ase.cts.seminar1.zoo.Zoo;
-import ro.ase.cts.seminar1.zoo.ZooKeeper;
+import ro.ase.cts.seminar01.animals.Lion;
+import ro.ase.cts.seminar01.animals.Tiger;
+import ro.ase.cts.seminar01.animals.Zebra;
+import ro.ase.cts.seminar01.zoo.Zoo;
+import ro.ase.cts.seminar01.zoo.ZooKeeper;
 
 public class Main {
     public static void main(String[] args) {

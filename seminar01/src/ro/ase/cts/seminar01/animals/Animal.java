@@ -1,4 +1,4 @@
-package ro.ase.cts.seminar1.animals;
+package ro.ase.cts.seminar01.animals;
 
 public abstract class Animal {
     protected String name;
