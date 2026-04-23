@@ -1,23 +1,30 @@
 package ro.ase.cts.seminar02.main;
 
+import ro.ase.cts.seminar02.clase.Aplicant;
+import ro.ase.cts.seminar02.clase.readers.AngajatiReader;
+import ro.ase.cts.seminar02.clase.readers.AplicantReader;
+
 import java.io.FileNotFoundException;
 import java.util.List;
 
-import ro.ase.cts.seminar02.clase.Angajat;
-import ro.ase.cts.seminar02.clase.Utils;
 
 public class Program {
 
-	public static void main(String[] args) {
-		List<Angajat> listaAngajati;
-		try {
-			listaAngajati = Utils.readAngajati("angajati.txt");
-			for(Angajat angajat:listaAngajati)
-				System.out.println(angajat.toString());
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+        List<Aplicant> listaAplicanti;
+        try {
+            AplicantReader ra = new AngajatiReader("seminar02/angajati.txt");
+            listaAplicanti = ra.readAplicanti();
+            for (Aplicant aplicant : listaAplicanti) {
+                System.out.println(aplicant.toString());
+                aplicant.afisareVenit();
+                aplicant.afiseazaStatut();
+            }
+
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
 
 }
