@@ -16,5 +16,4 @@ public class Main {
         proxy.interneazaPacient(pacient);
         proxy.interneazaPacient(pacient2);
     }
-
 }
