@@ -15,11 +15,16 @@ public class Main {
         ((Departament) depSpital).adaugaStructura(sectieManagement);
         ((Departament) depAdmin).adaugaStructura(sectieSecretariat);
 
+        ((Departament) depSpital).getStructura(1).afiseazaDetaliiStructura(" ");
         depSpital.afiseazaDetaliiStructura("  ");
 
         ((Departament) depSpital).stergeStructura(sectieManagement);
         ((Departament) depAdmin).adaugaStructura(sectieManagement);
 
-        System.out.println("Dupa modificare: 0\n");
+        System.out.println("Dupa modificare: \n");
+
+        depSpital.afiseazaDetaliiStructura("  ");
+
+
     }
 }

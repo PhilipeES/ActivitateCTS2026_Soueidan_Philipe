@@ -25,7 +25,7 @@ public class SpitalFacade {
                     System.out.println("Pacientul" + pacient.getNume()+ " nu are loc in acest spital!");
             }
             else
-                System.out.println("Pacientul" + pacient.getNume() +" are bilet de trimitere!\n");
+                System.out.println("Pacientul" + pacient.getNume() +"nu are bilet de trimitere!\n");
         }
         else
             System.out.println("Pacientul" + pacient.getNume() +" nu este eligibil pentru internare!\n");

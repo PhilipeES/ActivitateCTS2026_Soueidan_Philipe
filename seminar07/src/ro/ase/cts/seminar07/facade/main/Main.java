@@ -7,6 +7,7 @@ import ro.ase.cts.seminar07.facade.clase.Salon;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("---------- FACADE - SPITAL, A6 ----------");
         Pacient pacient = new Pacient("Natalia", 7);
         Pacient pacient1 = new Pacient("Rares", 5);
         Pacient pacient2 = new Pacient("Matei", 2);

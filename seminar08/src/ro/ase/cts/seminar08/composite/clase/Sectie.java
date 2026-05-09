@@ -11,7 +11,7 @@ public class Sectie implements Structura {
 
     @Override
     public void afiseazaDetaliiStructura(String spatii) {
-        System.out.println(spatii + "Nume sectie: "+this.numeSectie+"\n"+ "Nr. Angajati: "+this.nrAngajati+"\n");
+        System.out.println(spatii + "Nume sectie: " + this.numeSectie + " are " + this.nrAngajati + " angajati.");
     }
 
 

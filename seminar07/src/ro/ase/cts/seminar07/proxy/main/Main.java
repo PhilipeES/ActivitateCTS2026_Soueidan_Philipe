@@ -7,7 +7,7 @@ import ro.ase.cts.seminar07.proxy.claseproxy.ProxyCuAsigurare;
 public class Main {
     public static void main(String[] args) {
         Pacient pacient = new Pacient("Roland", true);
-        Pacient pacient2 = new Pacient("Alex", true);
+        Pacient pacient2 = new Pacient("Alex", false);
         Spital spital = new Spital("Carol Davila");
 
         //spital.interneazaPacient(pacient);

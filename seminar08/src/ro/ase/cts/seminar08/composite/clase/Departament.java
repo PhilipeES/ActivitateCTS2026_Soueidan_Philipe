@@ -26,9 +26,8 @@ public class Departament implements Structura {
 
     @Override
     public void afiseazaDetaliiStructura(String spatii) {
-        System.out.println(spatii + "Nume Departament: "+ this.numeDep);
-        for(Structura structura: subStructuri)
-        {
+        System.out.println(spatii + "Nume Departament: " + this.numeDep);
+        for (Structura structura : subStructuri) {
             structura.afiseazaDetaliiStructura(spatii + "   ");
         }
     }

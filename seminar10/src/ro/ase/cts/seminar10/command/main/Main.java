@@ -7,7 +7,7 @@ public class Main {
         PersonalSpital medic = new Medic("Soueidan");
         PersonalSpital asistenta = new Asistenta("Sava");
 
-        Pacient pacient = new Pacient("Ciobanu");
+        Pacient pacient = new Pacient("Natalia");
         Pacient pacient2 = new Pacient("Philipe");
 
         Command comanda1 = new Internare(medic, pacient);
