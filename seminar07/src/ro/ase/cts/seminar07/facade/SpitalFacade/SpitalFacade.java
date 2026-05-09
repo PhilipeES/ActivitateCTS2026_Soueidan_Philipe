@@ -13,22 +13,19 @@ public class SpitalFacade {
         this.salon = salon;
     }
 
-    public void interneazaPacient(Pacient pacient){
-        if (pacient.getGravitate()>=4){
-            if (medic.areBiletDeTrimitere(pacient)){
+    public void interneazaPacient(Pacient pacient) {
+        if (pacient.getGravitate() >= 4) {
+            if (medic.areBiletDeTrimitere(pacient)) {
                 int pat = salon.suntPaturiLibere();
-                if(pat!=-1){
-                    System.out.println("Pacientul "+ pacient.getNume() + " poate fi internat pe patul "+ pat);
+                if (pat != -1) {
+                    System.out.println("Pacientul " + pacient.getNume() + " poate fi internat pe patul " + pat);
                     salon.ocupaPat(pat);
-                }
-                else
-                    System.out.println("Pacientul" + pacient.getNume()+ " nu are loc in acest spital!");
-            }
-            else
-                System.out.println("Pacientul" + pacient.getNume() +"nu are bilet de trimitere!\n");
-        }
-        else
-            System.out.println("Pacientul" + pacient.getNume() +" nu este eligibil pentru internare!\n");
+                } else
+                    System.out.println("Pacientul" + pacient.getNume() + " nu are loc in acest spital!");
+            } else
+                System.out.println("Pacientul" + pacient.getNume() + "nu are bilet de trimitere!\n");
+        } else
+            System.out.println("Pacientul" + pacient.getNume() + " nu este eligibil pentru internare!\n");
     }
 
 }
